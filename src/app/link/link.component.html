@@ -1,0 +1,15 @@
+
+<div class="card">
+  <!-- <img src="..." class="card-img-top" alt="..."> -->
+  <div class="card-header">
+    <a href="{{ link.link }}" target="_blank">{{ link.title }}</a>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Puntos</p>
+    <p class="card-text display-2">{{ link.votes }}</p>
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-primary mr-3" (click)="link.voterPositive()">+1</button>
+    <button class="btn btn-danger ml-3" (click)="link.votesNegative()">-1</button>
+  </div>
+</div>
